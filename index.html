@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta aria-describedby="It is a website where you will see videos and audios of different categories being their for you.">
+    <title> Audio-Video Project</title>
+    <link rel="stylesheet" href="./styles.css" >
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="grid-overlay"></div>
+    <!--Nav Section-->
+    <div id="navbar">
+          <!--Header Section-->
+        <div id="header">
+            <center><h1 style="color:white">NeonVault</h1></center>
+        </div>
+        <ul>
+          <li><a href="#music"><i data-lucide="music-3"></i> Music</a></li>
+          <li><a href="#podcasts"><i data-lucide="mic"></i> Podcasts</a></li>
+          <li><a href="#films"><i data-lucide="film"></i> Films</a></li>
+          <li><a href="#youtube"><i data-lucide="youtube"></i> Memes</a></li>
+        </ul>
+      </div>
+      
+      <script>
+        lucide.createIcons();
+      </script>
+
+
+    <!--Sections for each category-->
+    <div id="section">
+        <div id="music" class="music-section">
+            <h2 class="section-heading">Neon Tracks</h2>
+            <div class="music-grid">
+                <!-- Music Cards -->
+                <div class="music-card">
+                    <div class="music-info">
+                        <h3>APT</h3>
+                        <p>by Bruno Mars & Rose</p>
+                    </div>
+                    <div class="music-controls">
+                        <audio controls preload="none" class="audio-control">
+                            <source src="./audio/bruno-mars-rose-of-blackpink-apt.mp3" type="audio/mpeg">
+                        </audio>
+                        <i class="icon" data-lucide="vinyl"></i>
+                    </div>
+                </div>
+                <div class="music-card">
+                    <div class="music-info">
+                        <h3>Senorita</h3>
+                        <p>by Camila Cabello & Shawn Mendes</p>
+                    </div>
+                    <div class="music-controls">
+                        <audio controls preload="none" class="audio-control">
+                            <source src="./audio/Seorita_320(PagaiWorld.com).mp3" type="audio/mpeg">
+                        </audio>
+                        <i class="icon" data-lucide="zap"></i>
+                    </div>
+                </div>
+                
+                <div class="music-card">
+                    <div class="music-info">
+                        <h3>Pagal Ye Pagal Wo</h3>
+                        <p>by Shinchan</p>
+                    </div>
+                    <div class="music-controls">
+                        <audio controls preload="none" class="audio-control">
+                            <source src="./audio/Pagal ye pagal wo shinchan.mp3" type="audio/mpeg">
+                        </audio>
+                        <i class="icon" data-lucide="cpu"></i>
+                    </div>
+                </div>
+                
+                <div class="music-card">
+                    <div class="music-info">
+                        <h3>Levitating</h3>
+                        <p>by Dua Lipa & DaBaby</p>
+                    </div>
+                    <div class="music-controls">
+                        <audio controls preload="none" class="audio-control">
+                            <source src="./audio/dua-lipa-dababy-levitating.mp3" type="audio/mpeg">
+                        </audio>
+                        <i class="icon" data-lucide="activity"></i>
+                    </div>
+                </div>
+                
+                <div class="music-card">
+                    <div class="music-info">
+                        <h3>Jeene Laga hoo</h3>
+                        <p>by Atif Aslam</p>
+                    </div>
+                    <div class="music-controls">
+                        <audio controls preload="none" class="audio-control">
+                            <source src="./audio/atif-aslam-jeene-laga-hoon-from-ramaiya-vastavaiya-feat-shreya-ghoshal.mp3" type="audio/mpeg">
+                        </audio>
+                        <i class="icon" data-lucide="radio"></i>
+                    </div>
+                </div>
+                
+                <div class="music-card">
+                    <div class="music-info">
+                        <h3>Hua hai Aaj Pehli Baar</h3>
+                        <p>by Armaan Malik</p>
+                    </div>
+                    <div class="music-controls">
+                        <audio controls preload="none" class="audio-control">
+                            <source src="./audio/Hua-Hain-Aaj-Pehli-Baar.mp3" type="audio/mpeg">
+                        </audio>
+                        <i class="icon" data-lucide="cloud-rain"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Podcasts Section-->
+        <div id="podcasts">
+            <h2 class="section-heading" class="podcast-section">CyberCasts</h2>
+            <div class="podcast-grid">
+                <div class="podcast-card">
+                    <div class="podcast-info">
+                        <h3><i data-lucide="mic"></i> AI & Future of Technology</h3>
+                        <p class="host">with Microsoft VP & Satya Nadella</p>
+                        <p class="desc">About AI PCs  & Healthcare AI</p>
+                        <audio controls preload="none" class="audio-control">
+                            <source src="./audio/Podcasts/The Next Wave - AI and The Future of Technology-episode-Microsoft VP Explains AI PCs + Satya Nadella on Healthcare AI.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+                <div class="podcast-card">
+                    <div class="podcast-info">
+                        <h3><i data-lucide="waveform"></i> Use of AI in higher Education</h3>
+                        <p class="host">with Linday Weinberg & Robert Oves</p>
+                        <p class="desc">Universities are using AI to minimise their finances.</p>
+                        <audio controls preload="none" class="audio-control">
+                            <source src="./audio/Podcasts/Lindsay-Weinberg-Robert-Oves-NEW.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+                <div class="podcast-card">
+                    <div class="podcast-info">
+                        <h3><i data-lucide="rss"></i> Building the Internet of Agents</h3>
+                        <p class="host">with Vijay Pandey</p>
+                        <p class="desc">Agency- an open source collected building the internet of agents backed by cisco, ai, etc.</p>
+                        <audio controls preload="none" class="audio-control">
+                            <source src="podcasts/signal-drift.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+                <div class="podcast-card">
+                    <div class="podcast-info">
+                        <h3><i data-lucide="rss"></i> Will AI replace Amazon ?</h3>
+                        <p class="host">with Ajay Bam</p>
+                        <p class="desc">Future of Shopping revealed.</p>
+                        <audio controls preload="none" class="audio-control">
+                            <source src="./audio/Podcasts/The Next Wave - AI and The Future of Technology-episode-Will AI Replace Amazon_ The Future of Shopping Revealed.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+                <div class="podcast-card">
+                    <div class="podcast-info">
+                        <h3><i data-lucide="rss"></i> Latest Chatgpt Updates</h3>
+                        <p class="host">with Matt Wolfe & Nathan Lands</p>
+                        <p class="desc">About all the new OpenAI model names like 4.5, 4.1, o3, 04-mini, and the new "memory" feature.</p>
+                        <audio controls preload="none" class="audio-control">
+                            <source src="./audio/Podcasts/The Next Wave - AI and The Future of Technology-episode-Latest ChatGPT Updates Explained_ Memory, o3 & 04-mini, 4.1, Social Media Rumors.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+                <div class="podcast-card">
+                    <div class="podcast-info">
+                        <h3><i data-lucide="rss"></i>How AI is replacing entire dev teams in 2025 ? </h3>
+                        <p class="host">with Matt Wolfe & Nathan Lands</p>
+                        <p class="desc">Is it really possible to rebuild an entire website using A.I.?</p>
+                        <audio controls preload="none" class="audio-control">
+                            <source src="./audio/Podcasts/The Next Wave - AI and The Future of Technology-episode-How AI Is Replacing Entire Dev Teams in 2025 _ Vibe Coding EXPLAINED.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Films Section-->
+        <div id="films" class="film-section">
+            <h2 class="section-heading">Neon Cinema</h2>
+            <div class="film-grid">
+                <div class="film-card">
+                    <div class="film-thumbnail">
+                        <iframe 
+                        src="https://www.youtube.com/embed/aljVY3PsYpE?si=nWnqDCl2edcADjyN" 
+                        title="Neon Dreams"
+                        frameborder="0" 
+                        allowfullscreen
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                        <div class="custom-play"></div>
+                    </div>
+                    <div class="film-info">
+                        <h3>Shaadi Mein Zaroor Aana</h3>
+                        <p>is a 2017 Indian Hindi-language romance drama comedy film directed by Ratnaa Sinha, written by Kamal Pandey.    Produced by Vinod, and Manju Bachchan, the film features Rajkummar Rao and Kriti .</p>
+                    </div>
+                </div>
+                <div class="film-card">
+                    <div class="film-thumbnail">
+                        <iframe 
+                        src="https://www.youtube.com/embed/zfwfg_eM1wc?si=tR42P-FMbas7A5iK" 
+                        title="Neon Dreams"
+                        frameborder="0" 
+                        allowfullscreen
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                        <div class="custom-play"></div>
+                    </div>
+                    <div class="film-info">
+                        <h3>The Exorcism of God</h3>
+                        <p>The Exorcism of God is a 2021 supernatural horror film directed and co-written by Alejandro Hidalgo and starring Will Beinbrink, María Gabriela de Faría, and Joseph Marcell.</p>
+                    </div>
+                </div>
+                <div class="film-card">
+                    <div class="film-thumbnail">
+                        <iframe 
+                        src="https://www.youtube.com/embed/e1r7C5FKjh8?si=aLg9KUt1bz_s9dZB" 
+                        title="Neon Dreams"
+                        frameborder="0" 
+                        allowfullscreen
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                        <div class="custom-play"></div>
+                    </div>
+                    <div class="film-info">
+                        <h3>Mrs</h3>
+                        <p>Mrs. is a 2024 Indian drama film. Starring Sanya Malhotra and directed by Arati Kadav, it tells the story of a newly-wed woman who has to navigate regressive patriarchal traditions. </p>
+                    </div>
+                </div>
+                <div class="film-card">
+                    <div class="film-thumbnail">
+                        <iframe 
+                        src="https://www.youtube.com/embed/eKwcg4mveTg?si=Rf5nXzRvXl_K4WDt" 
+                        title="Neon Dreams"
+                        frameborder="0" 
+                        allowfullscreen
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                        <div class="custom-play"></div>
+                    </div>
+                    <div class="film-info">
+                        <h3>Train to Busan</h3>
+                        <p>Train to Busan is a 2016 South Korean action horror film directed by Yeon Sang-ho, written by Park Joo-suk, starring Gong Yoo, Jung Yu-mi, Ma Dong-seok, Kim Su-an, Choi Woo-shik, Ahn So-hee, Kim Eui-sung. </p>
+                    </div>
+                </div>
+                <div class="film-card">
+                    <div class="film-thumbnail">
+                        <iframe 
+                        src="https://www.youtube.com/embed/TM1Lqi_DWzA?si=55fNPf6nvVb9K6UT" 
+                        title="Neon Dreams"
+                        frameborder="0" 
+                        allowfullscreen
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                        <div class="custom-play"></div>
+                    </div>
+                    <div class="film-info">
+                        <h3>Chhichhore</h3>
+                        <p>Chhichhore is a 2019 Indian coming-of-age comedy-drama by Nitesh Tiwari. The film stars includes Sushant Singh, Shraddha Kapoor, Varun Sharma, Naveen Polishetty, Tahir and Tushar Pandey.</p>
+                    </div>
+                </div>
+                <div class="film-card">
+                    <div class="film-thumbnail">
+                        <iframe 
+                        src="https://www.youtube.com/embed/FONdncajPfg?si=m3dtypudYv6qsyOs" 
+                        title="Neon Dreams"
+                        frameborder="0" 
+                        allowfullscreen
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                        <div class="custom-play"></div>
+                    </div>
+                    <div class="film-info">
+                        <h3>Home Alone</h3>
+                        <p>Home Alone is a 1990 American Christmas comedy film directed by Chris Columbus, and written and produced by John Hughes. The film stars Macaulay Culkin, an 8 year old boy who defends his home.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+          
+
+        <!--Youtube Videos Section-->
+        <div id="youtube" class="youtube-section">
+            <h2 class="youtube-heading">Cyber Memes</h2>
+            <div class="youtube-grid">
+                <div class="youtube-card">
+                    <div class="youtube-embed">
+                        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDM5d2RocmJpYTQ3ZG9vd3d0M200eXlmb2NvMndrZ2JqZGNycGE5ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dg/3cK8SNSKpi22uBD2CE/giphy.gif" alt="Glitch Cat Meme" class="meme-img" />
+                    </div>
+                    <div class="youtube-info">
+                        <h3>You got me the wrong catfood!</h3>
+                    </div>
+                </div>
+                <div class="youtube-card">
+                    <div class="youtube-embed">
+                        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbTNzMmpoemNncmcydmNpbzNoZ3dld3JsMDVlMG45N2R1OGN3aWdoNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dg/d9P5HfhXRNRj9JDPe9/giphy.gif" alt="Glitch Cat Meme" class="meme-img" />
+                    </div>
+                    <div class="youtube-info">
+                        <h3>Emotional damage</h3>
+                    </div>
+                </div>
+                <div class="youtube-card">
+                    <div class="youtube-embed">
+                        <img src="https://i.gifer.com/T5KC.gif" alt="Glitch Cat Meme" class="meme-img" />
+                    </div>
+                    <div class="youtube-info">
+                    </div>
+                </div>
+                <div class="youtube-card">
+                    <div class="youtube-embed">
+                        <img src="https://i.gifer.com/Gal3.gif" alt="Glitch Cat Meme" class="meme-img" />
+                    </div>
+                    <div class="youtube-info">
+                    </div>
+                </div>
+                <div class="youtube-card">
+                    <div class="youtube-embed">
+                        <video autoplay loop muted controls class="meme-img">
+                            <source src="https://i.gifer.com/17zk.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>  
+                    </div>
+                    <div class="youtube-info">
+                    </div>
+                </div>
+                <div class="youtube-card">
+                    <div class="youtube-embed">
+                        <img src="https://i.gifer.com/LLlP.gif" alt="Glitch Cat Meme" class="meme-img" />
+                    </div>
+                    <div class="youtube-info">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Footer Section-->
+    <footer class="cyber-footer">
+        <div class="footer-content">
+            <h2 class="footer-logo">NeonVault</h2>
+            <p class="footer-tagline">“Glitched minds build the future.”</p>
+            <div class="footer-socials">
+                <a href="#" class="footer-icon">🐦</a>
+                <a href="#" class="footer-icon">💻</a>
+                <a href="#" class="footer-icon">📸</a>
+            </div>
+            <p class="footer-credits">© 2025 NeonVault · Built in the glitch stream</p>
+        </div>
+    </footer>
+
+
+    <script>
+    const audios = document.querySelectorAll('audio');
+    audios.forEach(audio => {
+        audio.addEventListener('play', () => {
+            audios.forEach(other => {
+                if (other !== audio) other.pause();
+            });
+        });
+    });
+    </script>        
+</body>
+</html>
