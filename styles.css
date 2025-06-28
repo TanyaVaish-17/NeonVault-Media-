@@ -10,6 +10,9 @@ html {
     background-size: cover;
     position: relative;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transform: scale(0.8);
+    transform-origin: top center;
+    width: 125%;
   }
 
   
