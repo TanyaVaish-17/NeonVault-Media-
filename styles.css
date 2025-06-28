@@ -1,16 +1,5 @@
 /* Smooth Scroll */
 html {
-  font-size: 16px;
-}
-
-html, body {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-}
-html {
     scroll-behavior: smooth;
   }
   
@@ -613,64 +602,4 @@ html {
     30% { transform: skew(-1deg); }
     40%, 100% { transform: none; }
   }
-  /* === RESPONSIVE FIXES START === */
-
-@media (max-width: 1024px) {
-  .music-grid,
-  .film-grid,
-  .youtube-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  h1, h2, h3 {
-    font-size: 2rem;
-  }
-
-  .section-heading,
-  .youtube-heading {
-    font-size: 1.8rem;
-  }
-
-  .music-card,
-  .neon-card,
-  .film-card {
-    max-width: 90%;
-    padding: 16px;
-  }
-
-  .music-info h3,
-  .film-info h3,
-  .neon-card h3 {
-    font-size: 1.2rem;
-  }
-
-  .youtube-embed iframe {
-    height: 180px;
-  }
-}
-
-@media (max-width: 600px) {
-  #navbar ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  #navbar ul li a {
-    font-size: 1rem;
-  }
-
-  h1, h2, h3 {
-    font-size: 2rem;
-  }
-
-  .music-grid,
-  .film-grid,
-  .youtube-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-    
+  
