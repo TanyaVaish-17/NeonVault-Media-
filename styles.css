@@ -197,7 +197,7 @@ html {
     text-align: center;
   }
   
-  .music-grid {
+  .music-grid ,.neon-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* changed from 2 to 3 */
     gap: 30px;
@@ -258,7 +258,6 @@ html {
   .audio-control:hover {
     box-shadow: 0 0 8px #00ffff, 0 0 16px #00ffff;
   }
-  
   .music-card::before {
     content: '';
     position: absolute;
@@ -294,57 +293,93 @@ html {
       grid-template-columns: 1fr;
     }
   }
-  .podcast-section {
-    padding: 60px 20px;
-    text-align: center;
-  }
-  
-  .podcast-grid {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 30px;
-    justify-items: center;
-    margin-top: 40px;
-  }
-  
-  .podcast-card {
-    max-width: 380px;
-    background: rgba(255, 255, 255, 0.05);
+  .neon-card {
+    width:100%;
+    max-width: 340px;
+    background: rgba(0,0,0,0.4);
     border: 1px solid #ff00ff;
-    border-radius: 14px;
+    border-radius: 12px;
     padding: 20px;
-    box-shadow: 0 0 25px rgba(255, 0, 255, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    backdrop-filter: blur(6px);
-    overflow: hidden;
+    text-align: center;
+    transition: box-shadow 0.4s, transform 0.3s;
+    box-shadow: 0 0 20px #ff00ff66, 0 0 40px #ff00ff33;
+    display:flex;
+    flex-direction: column;
+    gap:15px;
     position: relative;
+    overflow: hidden;
   }
   
-  .podcast-card:hover {
-    transform: scale(1.03);
-    box-shadow: 0 0 40px #ff00ff, 0 0 60px #00ffff;
+  .neon-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #ff00ff, 0 0 60px #ff00ff;
   }
-  
-  .podcast-info h3 {
-    color: #ffffff;
-    text-shadow: 0 0 10px #ff00ff;
+  .neon-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 20px #ff00ff55, 0 0 40px #ff00ff33;
+  }
+  .neon-card h3 {
+    color: #ff00ff;
     font-size: 1.6rem;
-    margin: 0 0 8px;
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+    margin: 1rem 0;
   }
-  
-  .podcast-info .host {
-    color: #00ffff;
+  .neon-card audio {
+    width: 100%;
+    margin-bottom: 1rem;
+    accent-color: #ff00ff;
+  }
+  .neon-loop-button {
+    background: transparent;
+    color: #ff00ff;
+    border: 2px solid #ff00ff;
+    padding: 10px 24px;
     font-size: 1rem;
-    margin-bottom: 10px;
-    text-shadow: 0 0 5px #00ffff;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    text-shadow: 0 0 8px #ff00ff;
+    box-shadow: 0 0 15px #ff00ff55, 0 0 30px #ff00ff33;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
   }
-  
-  .podcast-info .desc {
-    color: #ccc;
-    font-size: 0.9rem;
-    font-style: italic;
-    margin-bottom: 15px;
+  .neon-loop-button::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, #ff00ff55, transparent 70%);
+    animation: pulseNeon 2s infinite;
+    z-index: 0;
   }
+  .neon-loop-button span {
+    position: relative;
+    z-index: 1;
+  }
+  .neon-loop-button:hover {
+    color: #fff;
+    background: rgba(255,0,255,0.1);
+    box-shadow: 0 0 20px #ff00ff, 0 0 40px #ff00ff;
+    border-color: #ff00ff;
+  }
+  @keyframes pulseNeon {
+    0%, 100% {
+        transform: scale(0.9);
+        opacity: 0.7;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+  }
+
   .film-section {
     margin-top: 120px;
     padding: 40px 20px;

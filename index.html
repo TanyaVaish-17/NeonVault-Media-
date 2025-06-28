@@ -18,9 +18,9 @@
         </div>
         <ul>
           <li><a href="#music"><i data-lucide="music-3"></i> Music</a></li>
-          <li><a href="#podcasts"><i data-lucide="mic"></i> Podcasts</a></li>
+          <li><a href="#podcasts"><i data-lucide="image"></i> GlowScapes</a></li>
           <li><a href="#films"><i data-lucide="film"></i> Films</a></li>
-          <li><a href="#youtube"><i data-lucide="youtube"></i> Memes</a></li>
+          <li><a href="#youtube"><i data-lucide="smile"></i> Memes Memes</a></li>
         </ul>
       </div>
       
@@ -42,7 +42,7 @@
                     </div>
                     <div class="music-controls">
                         <audio controls preload="none" class="audio-control">
-                            <source src="./audio/bruno-mars-rose-of-blackpink-apt.mp3" type="audio/mpeg">
+                            <source src="./audio/songs/bruno-mars-rose-of-blackpink-apt.mp3" type="audio/mpeg">
                         </audio>
                         <i class="icon" data-lucide="vinyl"></i>
                     </div>
@@ -54,7 +54,7 @@
                     </div>
                     <div class="music-controls">
                         <audio controls preload="none" class="audio-control">
-                            <source src="./audio/Seorita_320(PagaiWorld.com).mp3" type="audio/mpeg">
+                            <source src="./audio/songs/Seorita_320(PagaiWorld.com).mp3" type="audio/mpeg">
                         </audio>
                         <i class="icon" data-lucide="zap"></i>
                     </div>
@@ -67,7 +67,7 @@
                     </div>
                     <div class="music-controls">
                         <audio controls preload="none" class="audio-control">
-                            <source src="./audio/Pagal ye pagal wo shinchan.mp3" type="audio/mpeg">
+                            <source src="./audio/songs/Pagal ye pagal wo shinchan.mp3" type="audio/mpeg">
                         </audio>
                         <i class="icon" data-lucide="cpu"></i>
                     </div>
@@ -80,7 +80,7 @@
                     </div>
                     <div class="music-controls">
                         <audio controls preload="none" class="audio-control">
-                            <source src="./audio/dua-lipa-dababy-levitating.mp3" type="audio/mpeg">
+                            <source src="./audio/songs/dua-lipa-dababy-levitating.mp3" type="audio/mpeg">
                         </audio>
                         <i class="icon" data-lucide="activity"></i>
                     </div>
@@ -93,7 +93,7 @@
                     </div>
                     <div class="music-controls">
                         <audio controls preload="none" class="audio-control">
-                            <source src="./audio/atif-aslam-jeene-laga-hoon-from-ramaiya-vastavaiya-feat-shreya-ghoshal.mp3" type="audio/mpeg">
+                            <source src="./audio/songs/atif-aslam-jeene-laga-hoon-from-ramaiya-vastavaiya-feat-shreya-ghoshal.mp3" type="audio/mpeg">
                         </audio>
                         <i class="icon" data-lucide="radio"></i>
                     </div>
@@ -106,7 +106,7 @@
                     </div>
                     <div class="music-controls">
                         <audio controls preload="none" class="audio-control">
-                            <source src="./audio/Hua-Hain-Aaj-Pehli-Baar.mp3" type="audio/mpeg">
+                            <source src="./audio/songs/Hua-Hain-Aaj-Pehli-Baar.mp3" type="audio/mpeg">
                         </audio>
                         <i class="icon" data-lucide="cloud-rain"></i>
                     </div>
@@ -115,68 +115,56 @@
         </div>
 
         <!--Podcasts Section-->
-        <div id="podcasts">
-            <h2 class="section-heading" class="podcast-section">CyberCasts</h2>
-            <div class="podcast-grid">
-                <div class="podcast-card">
-                    <div class="podcast-info">
-                        <h3><i data-lucide="mic"></i> AI & Future of Technology</h3>
-                        <p class="host">with Microsoft VP & Satya Nadella</p>
-                        <p class="desc">About AI PCs  & Healthcare AI</p>
-                        <audio controls preload="none" class="audio-control">
-                            <source src="./audio/Podcasts/The Next Wave - AI and The Future of Technology-episode-Microsoft VP Explains AI PCs + Satya Nadella on Healthcare AI.mp3" type="audio/mpeg">
-                        </audio>
-                    </div>
+        <div id="podcasts" class="neon-section">
+            <h2 class="section-heading">Neon Art & Soundscapes</h2>
+            <div class="neon-grid">
+                <div class="neon-card">
+                    <h3>🌧️ Rain</h3>
+                    <img src="./images/1.rain.gif" alt="🌧️ Rain" />
+                    <audio controls data-id="1">
+                        <source src="./audio/soundscapes/1.rain.mp3" type="audio/mpeg" />
+                    </audio>
+                    <button class="neon-loop-button" onclick="toggleLoop(1)">Toggle Loop</button>
                 </div>
-                <div class="podcast-card">
-                    <div class="podcast-info">
-                        <h3><i data-lucide="waveform"></i> Use of AI in higher Education</h3>
-                        <p class="host">with Linday Weinberg & Robert Oves</p>
-                        <p class="desc">Universities are using AI to minimise their finances.</p>
-                        <audio controls preload="none" class="audio-control">
-                            <source src="./audio/Podcasts/Lindsay-Weinberg-Robert-Oves-NEW.mp3" type="audio/mpeg">
-                        </audio>
-                    </div>
+                <div class="neon-card">
+                    <h3>🌊 Ocean waves</h3>
+                    <img src="./images/2.waves.gif" alt="🌊 Ocean waves" />
+                    <audio controls data-id="1">
+                        <source src="./audio/soundscapes/2.waves.mp3" type="audio/mpeg" />
+                    </audio>
+                    <button class="neon-loop-button" onclick="toggleLoop(1)">Toggle Loop</button>
                 </div>
-                <div class="podcast-card">
-                    <div class="podcast-info">
-                        <h3><i data-lucide="rss"></i> Building the Internet of Agents</h3>
-                        <p class="host">with Vijay Pandey</p>
-                        <p class="desc">Agency- an open source collected building the internet of agents backed by cisco, ai, etc.</p>
-                        <audio controls preload="none" class="audio-control">
-                            <source src="podcasts/signal-drift.mp3" type="audio/mpeg">
-                        </audio>
-                    </div>
+                <div class="neon-card">
+                    <h3>✨ Fireflies</h3>
+                    <img src="./images/3.fireflies.gif" alt="✨ Fireflies" />
+                    <audio controls data-id="1">
+                        <source src="./audio/soundscapes/3.fireflies.mp3" type="audio/mpeg" />
+                    </audio>
+                    <button class="neon-loop-button" onclick="toggleLoop(1)">Toggle Loop</button>
                 </div>
-                <div class="podcast-card">
-                    <div class="podcast-info">
-                        <h3><i data-lucide="rss"></i> Will AI replace Amazon ?</h3>
-                        <p class="host">with Ajay Bam</p>
-                        <p class="desc">Future of Shopping revealed.</p>
-                        <audio controls preload="none" class="audio-control">
-                            <source src="./audio/Podcasts/The Next Wave - AI and The Future of Technology-episode-Will AI Replace Amazon_ The Future of Shopping Revealed.mp3" type="audio/mpeg">
-                        </audio>
-                    </div>
+                <div class="neon-card">
+                    <h3>🔥 Fireplace</h3>
+                    <img src="./images/4.fireplace.gif" alt="🔥 Fireplace" />
+                    <audio controls data-id="1">
+                        <source src="./audio/soundscapes/4.fire.mp3" type="audio/mpeg" />
+                    </audio>
+                    <button class="neon-loop-button" onclick="toggleLoop(1)">Toggle Loop</button>
                 </div>
-                <div class="podcast-card">
-                    <div class="podcast-info">
-                        <h3><i data-lucide="rss"></i> Latest Chatgpt Updates</h3>
-                        <p class="host">with Matt Wolfe & Nathan Lands</p>
-                        <p class="desc">About all the new OpenAI model names like 4.5, 4.1, o3, 04-mini, and the new "memory" feature.</p>
-                        <audio controls preload="none" class="audio-control">
-                            <source src="./audio/Podcasts/The Next Wave - AI and The Future of Technology-episode-Latest ChatGPT Updates Explained_ Memory, o3 & 04-mini, 4.1, Social Media Rumors.mp3" type="audio/mpeg">
-                        </audio>
-                    </div>
+                <div class="neon-card">
+                    <h3>🌲 Forest wind</h3>
+                    <img src="./images/5.trees.gif" alt="🌲 Forest wind" />
+                    <audio controls data-id="1">
+                        <source src="./audio/soundscapes/5.trees.mp3" type="audio/mpeg" />
+                    </audio>
+                    <button class="neon-loop-button" onclick="toggleLoop(1)">Toggle Loop</button>
                 </div>
-                <div class="podcast-card">
-                    <div class="podcast-info">
-                        <h3><i data-lucide="rss"></i>How AI is replacing entire dev teams in 2025 ? </h3>
-                        <p class="host">with Matt Wolfe & Nathan Lands</p>
-                        <p class="desc">Is it really possible to rebuild an entire website using A.I.?</p>
-                        <audio controls preload="none" class="audio-control">
-                            <source src="./audio/Podcasts/The Next Wave - AI and The Future of Technology-episode-How AI Is Replacing Entire Dev Teams in 2025 _ Vibe Coding EXPLAINED.mp3" type="audio/mpeg">
-                        </audio>
-                    </div>
+                <div class="neon-card">
+                    <h3>🌸 Blossoms falling</h3>
+                    <img src="./images/6.blossom.gif" alt="🌸 Blossoms falling" />
+                    <audio controls data-id="1">
+                        <source src="./audio/soundscapes/6.piano.mp3" type="audio/mpeg" />
+                    </audio>
+                    <button class="neon-loop-button" onclick="toggleLoop(1)">Toggle Loop</button>
                 </div>
             </div>
         </div>
@@ -348,8 +336,6 @@
             <p class="footer-credits">© 2025 NeonVault · Built in the glitch stream</p>
         </div>
     </footer>
-
-
     <script>
     const audios = document.querySelectorAll('audio');
     audios.forEach(audio => {
@@ -359,6 +345,14 @@
             });
         });
     });
-    </script>        
+    function toggleLoop(id) {
+        const audio = document.querySelector(`audio[data-id="${id}"]`);
+        if (audio) {
+            audio.loop = !audio.loop;
+            alert(audio.loop ? "Loop enabled 🔁" : "Loop disabled ⏹️");
+        }
+    }
+    </script>
+             
 </body>
 </html>
